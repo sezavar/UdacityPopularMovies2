@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context="org.sezavar.app.udacitypopularmovies2.DetailActivityFragment"
+        android:id="@+id/detail_main_layout">
+
+        <TextView
+            android:id="@+id/detail_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            android:paddingBottom="@dimen/detail_title_textview_padding_bottom"
+            android:paddingLeft="@dimen/detail_title_textview_padding_left"
+            android:paddingRight="@dimen/detail_title_textview_padding_right"
+            android:paddingTop="@dimen/detail_title_textview_padding_top"
+            android:textColor="@color/white"
+            android:textSize="@dimen/extra_large_font_size" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/detail_padding_left"
+            android:paddingRight="@dimen/detail_padding_right"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/movie_thumbnail"
+                android:layout_width="@dimen/detail_movie_thumbnail_width"
+                android:layout_height="@dimen/detail_movie_thumbnail_height"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/detail_movie_info_padding_left">
+
+                <TextView
+                    android:id="@+id/detail_release_date_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/large_font_size" />
+
+                <TextView
+                    android:id="@+id/detail_rating_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_font_size" />
+                <Button
+                    android:id="@+id/detail_favorite_button"
+                    android:layout_width="@dimen/detail_movie_favorite_button_width"
+                    android:layout_height="@dimen/detail_movie_favorite_button_height"
+                    android:layout_marginTop="@dimen/detail_favorite_button_margin_top"
+                    android:text="Favorite"
+                    android:textSize="@dimen/medium_font_size"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_overview_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/medium_font_size" />
+
+
+    </LinearLayout>
+</ScrollView>
